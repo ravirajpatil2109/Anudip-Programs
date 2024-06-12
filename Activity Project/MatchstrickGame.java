@@ -56,18 +56,19 @@ public class MatchstrickGame
 							
 						default:
 							System.out.println("\nInvalid Move pick between 1 - 4");
-	        		}
-	        	} 
-	        	else 
-	        	{
-	        		System.out.println("\nInvalid move. You can pick between 1 and 4 matchsticks.");
+	        			}
+		        	} 
+		        	else 
+		        	{
+		        		System.out.println("\nInvalid move. You can pick between 1 and 4 matchsticks.");
+		        	}
+		        	if (totalMatchsticks <= 1) 
+		            	{
+			            	System.out.println("\nComputer is forced to pick the last matchstick. \nComputer Win!!!");
+			            	break;
+		            	}	
 	        	}
-	        	if (totalMatchsticks <= 1) 
-	            	{
-		            	System.out.println("\nComputer is forced to pick the last matchstick. \nComputer Win!!!");
-		            	break;
-	            	}	
-	        }
-	}   
-	scanner.close();
+		}   
+		scanner.close();
+	}
 }
